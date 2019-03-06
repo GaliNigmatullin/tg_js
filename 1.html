@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function add (a, b){
+        return a + b;
+    }
+    function reduce (a, b){
+        return a - b;
+    }
+    function multiply (a, b){
+        return a * b;
+    }
+    function divide (a, b){
+        return a / b;
+    }
+
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case '+':
+                return add(arg1, arg2);
+            case '-':
+                return reduce(arg1, arg2);
+            case '*':
+                return multiply(arg1, arg2);
+            case '/':
+                return divide(arg1, arg2);
+        }
+    }
+    console.log(mathOperation(5, 10 ,'*'));
+</script>
+
+</body>
+</html>
